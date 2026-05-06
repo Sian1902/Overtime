@@ -12,20 +12,24 @@ final class SplashPresenter: SplashPresenterProtocol {
 
     private weak var view: SplashView?
     private let router: AppRouterProtocol
+    private let userDefault : UserDefaultsManagerProtocol
 
-    init(router: AppRouterProtocol) {
+    init(router: AppRouterProtocol, userdefault: UserDefaultsManagerProtocol) {
         self.router = router
+        self.userDefault = userdefault
     }
 
     func attachView(_ view: SplashView) {
         self.view = view
     }
 
-    func viewDidLoad() {
-        // navigate to onboarding or home depends on islogedin
-    }
     
     func animationDidFinished() {
-        
+//        if userDefault.hasSeenOnboarding {
+//            router.showHome()
+//        } else {
+//            router.showOnboarding()
+//        }
+        router.showHome()
     }
 }

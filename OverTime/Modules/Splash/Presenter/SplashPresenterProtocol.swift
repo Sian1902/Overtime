@@ -9,6 +9,5 @@ import Foundation
 
 protocol SplashPresenterProtocol{
    func attachView(_ view : SplashView)
-   func viewDidLoad()
    func animationDidFinished()
 }
