@@ -25,10 +25,10 @@ final class AppRouter: AppRouterProtocol {
     }	
 
     func showOnboarding() {
-       
+       print("onboarding")
     }
 
     func showHome() {
-       
+       print("Home")
     }
 }
