@@ -9,5 +9,6 @@ import Foundation
 
 protocol SplashView : AnyObject{
  
-    func viewDidLoad() 
+    
+    
 }

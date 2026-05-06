@@ -24,4 +24,8 @@ final class SplashPresenter: SplashPresenterProtocol {
     func viewDidLoad() {
         // navigate to onboarding or home depends on islogedin
     }
+    
+    func animationDidFinished() {
+        
+    }
 }
