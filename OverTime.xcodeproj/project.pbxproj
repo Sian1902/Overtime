@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CB656E02FAB22CD00CD3A31 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656DF2FAB22CD00CD3A31 /* AppColor.swift */; };
+		0CB656E22FAB22D600CD3A31 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656E12FAB22D600CD3A31 /* AppFont.swift */; };
+		0CB656E42FAB230E00CD3A31 /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */; };
 		95867B2B2FA9646200610EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95867B2A2FA9646200610EC5 /* AppDelegate.swift */; };
 		95867B2D2FA9646200610EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95867B2C2FA9646200610EC5 /* SceneDelegate.swift */; };
 		95867B2F2FA9646200610EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95867B2E2FA9646200610EC5 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CB656DF2FAB22CD00CD3A31 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		0CB656E12FAB22D600CD3A31 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
 		95867B272FA9646200610EC5 /* OverTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95867B2A2FA9646200610EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95867B2C2FA9646200610EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,102 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CB656DA2FAB218300CD3A31 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0CB656E62FAB23FB00CD3A31 /* Presenter */,
+				0CB656E52FAB23F300CD3A31 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0CB656DB2FAB218300CD3A31 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		0CB656DC2FAB218300CD3A31 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0CB656E72FAB241900CD3A31 /* Splash */,
+				0CB656DA2FAB218300CD3A31 /* Home */,
+				0CB656DB2FAB218300CD3A31 /* OnBoarding */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0CB656DD2FAB219B00CD3A31 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0CB656EB2FAB245600CD3A31 /* Repo */,
+				0CB656EA2FAB243C00CD3A31 /* Entities */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0CB656DE2FAB227700CD3A31 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0CB656DF2FAB22CD00CD3A31 /* AppColor.swift */,
+				0CB656E12FAB22D600CD3A31 /* AppFont.swift */,
+				0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0CB656E52FAB23F300CD3A31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CB656E62FAB23FB00CD3A31 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0CB656E72FAB241900CD3A31 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				0CB656E92FAB242D00CD3A31 /* Presenter */,
+				0CB656E82FAB242400CD3A31 /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		0CB656E82FAB242400CD3A31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CB656E92FAB242D00CD3A31 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0CB656EA2FAB243C00CD3A31 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0CB656EB2FAB245600CD3A31 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
 		95867B1E2FA9646200610EC5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +158,9 @@
 		95867B292FA9646200610EC5 /* OverTime */ = {
 			isa = PBXGroup;
 			children = (
+				0CB656DE2FAB227700CD3A31 /* Utils */,
+				0CB656DD2FAB219B00CD3A31 /* Data */,
+				0CB656DC2FAB218300CD3A31 /* Modules */,
 				95867B2A2FA9646200610EC5 /* AppDelegate.swift */,
 				95867B2C2FA9646200610EC5 /* SceneDelegate.swift */,
 				95867B2E2FA9646200610EC5 /* ViewController.swift */,
@@ -139,6 +244,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				95867B2F2FA9646200610EC5 /* ViewController.swift in Sources */,
+				0CB656E22FAB22D600CD3A31 /* AppFont.swift in Sources */,
+				0CB656E02FAB22CD00CD3A31 /* AppColor.swift in Sources */,
+				0CB656E42FAB230E00CD3A31 /* LayoutConstants.swift in Sources */,
 				95867B2B2FA9646200610EC5 /* AppDelegate.swift in Sources */,
 				95867B2D2FA9646200610EC5 /* SceneDelegate.swift in Sources */,
 			);
