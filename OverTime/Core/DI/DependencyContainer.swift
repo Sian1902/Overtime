@@ -18,5 +18,10 @@ final class DependencyContainer: DependencyContainerProtocol{
         presenter.attachView(vc)
         return vc
     }
-    
+    func makeSportsViewController(router: any AppRouterProtocol) -> UIViewController {
+        let presenter = SportsPresenter(router: router)
+        let vc = SportsCollectionViewController(presenter: presenter)
+        presenter.attachView(vc)
+        return vc
+    }
 }

@@ -28,7 +28,9 @@ final class AppRouter: AppRouterProtocol {
        print("onboarding")
     }
 
-    func showHome() {
-       print("Home")
+    func showSportsScreen() {
+        let vc = container.makeSportsViewController(router: self)
+        navigationController.setViewControllers([vc], animated: false)
+       print("SportsScreen")
     }
 }

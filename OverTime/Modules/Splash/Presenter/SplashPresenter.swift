@@ -30,6 +30,6 @@ final class SplashPresenter: SplashPresenterProtocol {
 //        } else {
 //            router.showOnboarding()
 //        }
-        router.showHome()
+        router.showSportsScreen()
     }
 }
