@@ -6,3 +6,6 @@
 //
 
 import Foundation
+struct Secret_example {
+    static let apiKey = "api_key"
+}
