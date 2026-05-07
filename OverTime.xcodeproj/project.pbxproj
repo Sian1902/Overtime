@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C62FF052FABAB2A00989124 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C62FF042FABAB2A00989124 /* UIColor+AppColors.swift */; };
+		0CB656E22FAB22D600CD3A31 /* UIFont+AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656E12FAB22D600CD3A31 /* UIFont+AppFont.swift */; };
+		0CB656E42FAB230E00CD3A31 /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */; };
+		0CB656EE2FAB29EB00CD3A31 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656ED2FAB29EB00CD3A31 /* SplashPresenter.swift */; };
+		0CB656F82FAB36F900CD3A31 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656F72FAB36F900CD3A31 /* SplashViewController.swift */; };
+		0CB656FA2FAB378400CD3A31 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656F92FAB378400CD3A31 /* UserDefaultManager.swift */; };
+		0CB656FC2FAB3B2A00CD3A31 /* SplashPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656FB2FAB3B2A00CD3A31 /* SplashPresenterProtocol.swift */; };
+		0CB656FE2FAB3B9B00CD3A31 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656FD2FAB3B9B00CD3A31 /* SplashView.swift */; };
+		0CB657012FAB3ED300CD3A31 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB657002FAB3ED300CD3A31 /* DependencyContainer.swift */; };
+		0CB657052FAB4ED000CD3A31 /* DependencyContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB657042FAB4ED000CD3A31 /* DependencyContainerProtocol.swift */; };
+		0CB657072FAB4EE800CD3A31 /* AppRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB657062FAB4EE800CD3A31 /* AppRouterProtocol.swift */; };
+		0CB657092FAB4EF300CD3A31 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB657082FAB4EF300CD3A31 /* AppRouter.swift */; };
+		0CB6570B2FAB591500CD3A31 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB6570A2FAB591500CD3A31 /* SplashViewController.xib */; };
 		95867B2B2FA9646200610EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95867B2A2FA9646200610EC5 /* AppDelegate.swift */; };
 		95867B2D2FA9646200610EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95867B2C2FA9646200610EC5 /* SceneDelegate.swift */; };
 		95867B2F2FA9646200610EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95867B2E2FA9646200610EC5 /* ViewController.swift */; };
@@ -16,6 +29,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C62FF042FABAB2A00989124 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
+		0CB656E12FAB22D600CD3A31 /* UIFont+AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+AppFont.swift"; sourceTree = "<group>"; };
+		0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
+		0CB656ED2FAB29EB00CD3A31 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		0CB656F72FAB36F900CD3A31 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		0CB656F92FAB378400CD3A31 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		0CB656FB2FAB3B2A00CD3A31 /* SplashPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenterProtocol.swift; sourceTree = "<group>"; };
+		0CB656FD2FAB3B9B00CD3A31 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		0CB657002FAB3ED300CD3A31 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		0CB657042FAB4ED000CD3A31 /* DependencyContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainerProtocol.swift; sourceTree = "<group>"; };
+		0CB657062FAB4EE800CD3A31 /* AppRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterProtocol.swift; sourceTree = "<group>"; };
+		0CB657082FAB4EF300CD3A31 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		0CB6570A2FAB591500CD3A31 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		95867B272FA9646200610EC5 /* OverTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95867B2A2FA9646200610EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95867B2C2FA9646200610EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +63,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CB656DC2FAB218300CD3A31 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0CB656E72FAB241900CD3A31 /* Splash */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0CB656DD2FAB219B00CD3A31 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0CB656EB2FAB245600CD3A31 /* Repo */,
+				0CB656EA2FAB243C00CD3A31 /* Entities */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0CB656DE2FAB227700CD3A31 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0CB656E12FAB22D600CD3A31 /* UIFont+AppFont.swift */,
+				0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */,
+				0CB656F92FAB378400CD3A31 /* UserDefaultManager.swift */,
+				0C62FF042FABAB2A00989124 /* UIColor+AppColors.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0CB656E72FAB241900CD3A31 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				0CB656E92FAB242D00CD3A31 /* Presenter */,
+				0CB656E82FAB242400CD3A31 /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		0CB656E82FAB242400CD3A31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CB656F72FAB36F900CD3A31 /* SplashViewController.swift */,
+				0CB656FD2FAB3B9B00CD3A31 /* SplashView.swift */,
+				0CB6570A2FAB591500CD3A31 /* SplashViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CB656E92FAB242D00CD3A31 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0CB656ED2FAB29EB00CD3A31 /* SplashPresenter.swift */,
+				0CB656FB2FAB3B2A00CD3A31 /* SplashPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0CB656EA2FAB243C00CD3A31 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0CB656EB2FAB245600CD3A31 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		0CB656FF2FAB3E6100CD3A31 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				0CB657002FAB3ED300CD3A31 /* DependencyContainer.swift */,
+				0CB657042FAB4ED000CD3A31 /* DependencyContainerProtocol.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		0CB657022FAB4EA400CD3A31 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0CB657032FAB4EAE00CD3A31 /* Routing */,
+				0CB656FF2FAB3E6100CD3A31 /* DI */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0CB657032FAB4EAE00CD3A31 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				0CB657062FAB4EE800CD3A31 /* AppRouterProtocol.swift */,
+				0CB657082FAB4EF300CD3A31 /* AppRouter.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 		95867B1E2FA9646200610EC5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +179,10 @@
 		95867B292FA9646200610EC5 /* OverTime */ = {
 			isa = PBXGroup;
 			children = (
+				0CB657022FAB4EA400CD3A31 /* Core */,
+				0CB656DE2FAB227700CD3A31 /* Utils */,
+				0CB656DD2FAB219B00CD3A31 /* Data */,
+				0CB656DC2FAB218300CD3A31 /* Modules */,
 				95867B2A2FA9646200610EC5 /* AppDelegate.swift */,
 				95867B2C2FA9646200610EC5 /* SceneDelegate.swift */,
 				95867B2E2FA9646200610EC5 /* ViewController.swift */,
@@ -125,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB6570B2FAB591500CD3A31 /* SplashViewController.xib in Resources */,
 				95867B372FA9646400610EC5 /* LaunchScreen.storyboard in Resources */,
 				95867B342FA9646400610EC5 /* Assets.xcassets in Resources */,
 				95867B322FA9646200610EC5 /* Main.storyboard in Resources */,
@@ -139,8 +267,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				95867B2F2FA9646200610EC5 /* ViewController.swift in Sources */,
+				0CB656FE2FAB3B9B00CD3A31 /* SplashView.swift in Sources */,
+				0CB657072FAB4EE800CD3A31 /* AppRouterProtocol.swift in Sources */,
+				0CB656EE2FAB29EB00CD3A31 /* SplashPresenter.swift in Sources */,
+				0CB656E22FAB22D600CD3A31 /* UIFont+AppFont.swift in Sources */,
+				0CB657052FAB4ED000CD3A31 /* DependencyContainerProtocol.swift in Sources */,
+				0CB656FC2FAB3B2A00CD3A31 /* SplashPresenterProtocol.swift in Sources */,
+				0CB657092FAB4EF300CD3A31 /* AppRouter.swift in Sources */,
+				0CB656E42FAB230E00CD3A31 /* LayoutConstants.swift in Sources */,
 				95867B2B2FA9646200610EC5 /* AppDelegate.swift in Sources */,
+				0CB656FA2FAB378400CD3A31 /* UserDefaultManager.swift in Sources */,
 				95867B2D2FA9646200610EC5 /* SceneDelegate.swift in Sources */,
+				0C62FF052FABAB2A00989124 /* UIColor+AppColors.swift in Sources */,
+				0CB657012FAB3ED300CD3A31 /* DependencyContainer.swift in Sources */,
+				0CB656F82FAB36F900CD3A31 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
