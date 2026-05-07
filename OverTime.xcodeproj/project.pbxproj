@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C551FD92FABEFBB00084C9A /* SportsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C551FD82FABEFBB00084C9A /* SportsPresenter.swift */; };
+		0C551FDB2FABEFCD00084C9A /* SportsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C551FDA2FABEFCD00084C9A /* SportsPresenterProtocol.swift */; };
+		0C551FDF2FABF02000084C9A /* SportsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C551FDC2FABF02000084C9A /* SportsCollectionViewController.swift */; };
+		0C551FE52FABF33300084C9A /* SportsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C551FE42FABF33300084C9A /* SportsCollectionViewCell.swift */; };
+		0C551FE72FABF4CF00084C9A /* SportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C551FE62FABF4CF00084C9A /* SportsView.swift */; };
+		0C5D04C52FACF4E600FCD91A /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5D04C42FACF4E600FCD91A /* Sport.swift */; };
 		0C62FF052FABAB2A00989124 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C62FF042FABAB2A00989124 /* UIColor+AppColors.swift */; };
 		0CB656E22FAB22D600CD3A31 /* UIFont+AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656E12FAB22D600CD3A31 /* UIFont+AppFont.swift */; };
 		0CB656E42FAB230E00CD3A31 /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */; };
@@ -29,6 +35,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C551FD82FABEFBB00084C9A /* SportsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsPresenter.swift; sourceTree = "<group>"; };
+		0C551FDA2FABEFCD00084C9A /* SportsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsPresenterProtocol.swift; sourceTree = "<group>"; };
+		0C551FDC2FABF02000084C9A /* SportsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsCollectionViewController.swift; sourceTree = "<group>"; };
+		0C551FE42FABF33300084C9A /* SportsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsCollectionViewCell.swift; sourceTree = "<group>"; };
+		0C551FE62FABF4CF00084C9A /* SportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsView.swift; sourceTree = "<group>"; };
+		0C5D04C42FACF4E600FCD91A /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
 		0C62FF042FABAB2A00989124 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		0CB656E12FAB22D600CD3A31 /* UIFont+AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+AppFont.swift"; sourceTree = "<group>"; };
 		0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
@@ -63,9 +75,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C551FD42FABEF8B00084C9A /* Sports */ = {
+			isa = PBXGroup;
+			children = (
+				0C551FD62FABEF9900084C9A /* Presenter */,
+				0C551FD52FABEF9400084C9A /* View */,
+			);
+			path = Sports;
+			sourceTree = "<group>";
+		};
+		0C551FD52FABEF9400084C9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C551FDC2FABF02000084C9A /* SportsCollectionViewController.swift */,
+				0C551FE42FABF33300084C9A /* SportsCollectionViewCell.swift */,
+				0C551FE62FABF4CF00084C9A /* SportsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C551FD62FABEF9900084C9A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0C551FD82FABEFBB00084C9A /* SportsPresenter.swift */,
+				0C551FDA2FABEFCD00084C9A /* SportsPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		0CB656DC2FAB218300CD3A31 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0C551FD42FABEF8B00084C9A /* Sports */,
 				0CB656E72FAB241900CD3A31 /* Splash */,
 			);
 			path = Modules;
@@ -122,6 +163,7 @@
 		0CB656EA2FAB243C00CD3A31 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				0C5D04C42FACF4E600FCD91A /* Sport.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -269,11 +311,17 @@
 				95867B2F2FA9646200610EC5 /* ViewController.swift in Sources */,
 				0CB656FE2FAB3B9B00CD3A31 /* SplashView.swift in Sources */,
 				0CB657072FAB4EE800CD3A31 /* AppRouterProtocol.swift in Sources */,
+				0C551FD92FABEFBB00084C9A /* SportsPresenter.swift in Sources */,
+				0C551FE52FABF33300084C9A /* SportsCollectionViewCell.swift in Sources */,
+				0C551FE72FABF4CF00084C9A /* SportsView.swift in Sources */,
 				0CB656EE2FAB29EB00CD3A31 /* SplashPresenter.swift in Sources */,
+				0C5D04C52FACF4E600FCD91A /* Sport.swift in Sources */,
 				0CB656E22FAB22D600CD3A31 /* UIFont+AppFont.swift in Sources */,
 				0CB657052FAB4ED000CD3A31 /* DependencyContainerProtocol.swift in Sources */,
+				0C551FDF2FABF02000084C9A /* SportsCollectionViewController.swift in Sources */,
 				0CB656FC2FAB3B2A00CD3A31 /* SplashPresenterProtocol.swift in Sources */,
 				0CB657092FAB4EF300CD3A31 /* AppRouter.swift in Sources */,
+				0C551FDB2FABEFCD00084C9A /* SportsPresenterProtocol.swift in Sources */,
 				0CB656E42FAB230E00CD3A31 /* LayoutConstants.swift in Sources */,
 				95867B2B2FA9646200610EC5 /* AppDelegate.swift in Sources */,
 				0CB656FA2FAB378400CD3A31 /* UserDefaultManager.swift in Sources */,

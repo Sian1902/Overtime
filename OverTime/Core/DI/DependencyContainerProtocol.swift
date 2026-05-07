@@ -9,7 +9,7 @@ import UIKit
 protocol DependencyContainerProtocol{
     func makeSplashViewController(router: AppRouterProtocol) -> UIViewController
  //   func makeOnboardingViewController(router: AppRouterProtocol) -> UIViewController
- //   func makeHomeViewController(router: AppRouterProtocol) -> UIViewController
+    func makeSportsViewController(router: AppRouterProtocol) -> UIViewController
     
     
 }
