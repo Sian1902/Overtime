@@ -1,14 +1,7 @@
-//
-//  SportsPresenter.swift
-//  OverTime
-//
-//  Created by Mona Zarea on 06/05/2026.
-//
-
 import Foundation
-class SportsPresenter : SportsPresenterProtocol{
+
+class SportsPresenter: SportsPresenterProtocol {
     
-   
     private let sports: [Sport] = [
         Sport(name: "Basketball", imageName: "basketball"),
         Sport(name: "Football", imageName: "football"),
@@ -18,23 +11,27 @@ class SportsPresenter : SportsPresenterProtocol{
         Sport(name: "Hockey", imageName: "hockey"),
         Sport(name: "Cricket", imageName: "cricket")
     ]
-    private weak var view : SportsView?
-    private let router : AppRouterProtocol
     
-    init(router:AppRouterProtocol) {
+    private weak var view: SportsView?
+    private let router: AppRouterProtocol
+    
+    init(router: AppRouterProtocol) {
         self.router = router
     }
-    func attachView(_ view: any SportsView) {
+    
+    func attachView(_ view: SportsView) {
         self.view = view
     }
     
-    func didSelectedSport(at index : Int) {
+    func didSelectedSport(at index: Int) {
         print("selected sport is \(sports[index].name)")
     }
+    
     func SportsNumber() -> Int {
         return sports.count
     }
-    func getSport(at index: Int) -> Sport{
+    
+    func getSport(at index: Int) -> Sport {
         return sports[index]
     }
 }
