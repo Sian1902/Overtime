@@ -1,7 +1,7 @@
 import Foundation
 
 struct NetworkConstants {
-    static let apiKey: String? = Bundle.main.infoDictionary?["SPORTS_API_KEY"] as? String
+    static let apiKey = Secret.apiKey
     static let baseURL = "https://apiv2.allsportsapi.com"
 
     static func sportURL(_ sport: SportType) -> String {
