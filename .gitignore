@@ -31,5 +31,4 @@ build/
 # If you use SwiftLint
 .swiftlint-cache/
 
-OverTime.xcodeproj/project.pbxproj
 Secret.swift
