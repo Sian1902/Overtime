@@ -15,15 +15,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = scene as? UIWindowScene else { return }
 
-                let nav = UINavigationController()
-                let container = DependencyContainer()
-                let router = AppRouter(navigationController: nav, container: container)
+            //let nav = UINavigationController()
+            let rootContainer = RootContainerViewController()
+            let container = DependencyContainer()
+            //let router = AppRouter(navigationController: nav, container: container)
+            let router = AppRouter(root: rootContainer, container: container)
 
-                window = UIWindow(windowScene: windowScene)
-                window?.rootViewController = nav
-                window?.makeKeyAndVisible()
+            window = UIWindow(windowScene: windowScene)
+            window?.rootViewController = rootContainer
+            window?.makeKeyAndVisible()
 
-                router.showSplash()
+            router.showSplash()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
