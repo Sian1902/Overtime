@@ -10,27 +10,36 @@ import UIKit
 
 final class AppRouter: AppRouterProtocol {
 
-    private let navigationController: UINavigationController
+    private weak var root: RootContainerViewController?
     private let container: DependencyContainerProtocol
 
-    init(navigationController: UINavigationController,
+    init(root : RootContainerViewController,
          container: DependencyContainerProtocol) {
-        self.navigationController = navigationController
+        self.root = root
         self.container = container
     }
 
     func showSplash() {
         let vc = container.makeSplashViewController(router: self)
-        navigationController.setViewControllers([vc], animated: false)
-    }	
+        root?.transition(to: vc)
+        //navigationController.setViewControllers([vc], animated: false)
+    }
 
     func showOnboarding() {
        print("onboarding")
     }
+    
+    // onboardig will be like that
+//    func showOnboarding() {
+//            let nav = UINavigationController()
+//            let vc  = container.makeOnboardingViewController(router: self)
+//            nav.setViewControllers([vc], animated: false)
+//            root?.transition(to: nav, duration: 0.3)
+//        }
 
-    func showSportsScreen() {
-        let vc = container.makeSportsViewController(router: self)
-        navigationController.setViewControllers([vc], animated: false)
-       print("SportsScreen")
-    }
+
+    func showMainTabBar() {
+        let tabBar = container.makeMaingTabBarController(router: self)
+            root?.transition(to: tabBar, duration: 0.3)
+        }
 }

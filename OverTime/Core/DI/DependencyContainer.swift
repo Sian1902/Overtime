@@ -14,7 +14,13 @@ final class DependencyContainer: DependencyContainerProtocol {
         return vc
     }
     
-    func makeSportsViewController(router: AppRouterProtocol) -> UIViewController {
+    func makeMaingTabBarController(router: AppRouterProtocol) -> UITabBarController{
+        let sportsVc = makeSportsViewController(router: router)
+       // let favoritesVc = makeFavoritesViewController(router: router)
+        return TabBarConfigurator.configure(tabBar: UITabBarController(), sports: sportsVc, favorites: UIViewController())
+    }
+    
+    private func makeSportsViewController(router: AppRouterProtocol) -> UIViewController {
         let presenter = SportsPresenter(router: router)
         let vc = SportsCollectionViewController(presenter: presenter)
         presenter.attachView(vc)

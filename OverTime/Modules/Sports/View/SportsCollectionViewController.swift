@@ -41,6 +41,7 @@ class SportsCollectionViewController: UICollectionViewController {
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         setupFlowLayout()
+        
     }
 
     private func setupFlowLayout() {

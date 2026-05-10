@@ -10,6 +10,6 @@ import Foundation
 protocol AppRouterProtocol{
     func showSplash()
     func showOnboarding()
-    func showSportsScreen()
-    
+    //func showSportsScreen()
+    func showMainTabBar()
 }

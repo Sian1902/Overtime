@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1396BF2FAD63700035CBE9 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1396BE2FAD63700035CBE9 /* Secret.swift */; };
 		0C62FF052FABAB2A00989124 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C62FF042FABAB2A00989124 /* UIColor+AppColors.swift */; };
 		0CB656E22FAB22D600CD3A31 /* UIFont+AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656E12FAB22D600CD3A31 /* UIFont+AppFont.swift */; };
 		0CB656E42FAB230E00CD3A31 /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */; };
@@ -20,7 +21,8 @@
 		0CB657072FAB4EE800CD3A31 /* AppRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB657062FAB4EE800CD3A31 /* AppRouterProtocol.swift */; };
 		0CB657092FAB4EF300CD3A31 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB657082FAB4EF300CD3A31 /* AppRouter.swift */; };
 		0CB6570B2FAB591500CD3A31 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB6570A2FAB591500CD3A31 /* SplashViewController.xib */; };
-		9584D4AD2FACF02E00F1509B /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584D4AC2FACF02E00F1509B /* Secret.swift */; };
+		0CEEBD922FAF4D6A00B3AEF1 /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEEBD912FAF4D6A00B3AEF1 /* TabBarConfigurator.swift */; };
+		0CEEBD942FAF615E00B3AEF1 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEEBD932FAF615E00B3AEF1 /* RootContainerViewController.swift */; };
 		9584D4BB2FAD306500F1509B /* SportsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584D4BA2FAD306500F1509B /* SportsModels.swift */; };
 		9584D4C12FAD33AE00F1509B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9584D4C02FAD33AE00F1509B /* Alamofire */; };
 		9584D4C62FAD36BC00F1509B /* SportsAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584D4C32FAD36BC00F1509B /* SportsAPIProtocol.swift */; };
@@ -42,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C1396BE2FAD63700035CBE9 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		0C62FF042FABAB2A00989124 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		0CB656E12FAB22D600CD3A31 /* UIFont+AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+AppFont.swift"; sourceTree = "<group>"; };
 		0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
@@ -55,7 +58,8 @@
 		0CB657062FAB4EE800CD3A31 /* AppRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterProtocol.swift; sourceTree = "<group>"; };
 		0CB657082FAB4EF300CD3A31 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		0CB6570A2FAB591500CD3A31 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
-		9584D4AC2FACF02E00F1509B /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		0CEEBD912FAF4D6A00B3AEF1 /* TabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		0CEEBD932FAF615E00B3AEF1 /* RootContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerViewController.swift; sourceTree = "<group>"; };
 		9584D4BA2FAD306500F1509B /* SportsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsModels.swift; sourceTree = "<group>"; };
 		9584D4C32FAD36BC00F1509B /* SportsAPIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsAPIProtocol.swift; sourceTree = "<group>"; };
 		9584D4C42FAD36BC00F1509B /* SportsAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsAPIManager.swift; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 			children = (
 				0CB657062FAB4EE800CD3A31 /* AppRouterProtocol.swift */,
 				0CB657082FAB4EF300CD3A31 /* AppRouter.swift */,
+				0CEEBD912FAF4D6A00B3AEF1 /* TabBarConfigurator.swift */,
+				0CEEBD932FAF615E00B3AEF1 /* RootContainerViewController.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -258,8 +264,8 @@
 				95867B332FA9646400610EC5 /* Assets.xcassets */,
 				95867B352FA9646400610EC5 /* LaunchScreen.storyboard */,
 				95867B382FA9646400610EC5 /* Info.plist */,
-				9584D4AC2FACF02E00F1509B /* Secret.swift */,
 				9584D4C92FAD372D00F1509B /* Secret.swift.example.swift */,
+				0C1396BE2FAD63700035CBE9 /* Secret.swift */,
 			);
 			path = OverTime;
 			sourceTree = "<group>";
@@ -360,14 +366,16 @@
 				9584D4D52FAD3B6300F1509B /* SportsCollectionViewController.swift in Sources */,
 				9584D4C82FAD36BC00F1509B /* NetworkConstants.swift in Sources */,
 				95867B2D2FA9646200610EC5 /* SceneDelegate.swift in Sources */,
+				0CEEBD922FAF4D6A00B3AEF1 /* TabBarConfigurator.swift in Sources */,
 				9584D4C72FAD36BC00F1509B /* SportsAPIManager.swift in Sources */,
+				0CEEBD942FAF615E00B3AEF1 /* RootContainerViewController.swift in Sources */,
 				9584D4D92FAD3BD100F1509B /* Sport.swift in Sources */,
 				9584D4D32FAD3B6300F1509B /* SportsPresenter.swift in Sources */,
 				9584D4C62FAD36BC00F1509B /* SportsAPIProtocol.swift in Sources */,
 				0C62FF052FABAB2A00989124 /* UIColor+AppColors.swift in Sources */,
 				9584D4CA2FAD372D00F1509B /* Secret.swift.example.swift in Sources */,
-				9584D4AD2FACF02E00F1509B /* Secret.swift in Sources */,
 				0CB657012FAB3ED300CD3A31 /* DependencyContainer.swift in Sources */,
+				0C1396BF2FAD63700035CBE9 /* Secret.swift in Sources */,
 				0CB656F82FAB36F900CD3A31 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
