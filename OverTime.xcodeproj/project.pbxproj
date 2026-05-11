@@ -44,6 +44,8 @@
 		958BD1E52FB13905007A6F76 /* LeaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958BD1E42FB13905007A6F76 /* LeaguesViewController.swift */; };
 		958BD1E72FB139E2007A6F76 /* LeaguePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958BD1E62FB139E2007A6F76 /* LeaguePresenterProtocol.swift */; };
 		958BD1E92FB13A40007A6F76 /* AllLeaguesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958BD1E82FB13A40007A6F76 /* AllLeaguesPresenter.swift */; };
+		958BD1EC2FB13DFE007A6F76 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 958BD1EB2FB13DFE007A6F76 /* SDWebImage */; };
+		958BD1EE2FB144F0007A6F76 /* LeagueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958BD1ED2FB144F0007A6F76 /* LeagueTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,7 @@
 		958BD1E42FB13905007A6F76 /* LeaguesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewController.swift; sourceTree = "<group>"; };
 		958BD1E62FB139E2007A6F76 /* LeaguePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguePresenterProtocol.swift; sourceTree = "<group>"; };
 		958BD1E82FB13A40007A6F76 /* AllLeaguesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLeaguesPresenter.swift; sourceTree = "<group>"; };
+		958BD1ED2FB144F0007A6F76 /* LeagueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958BD1EC2FB13DFE007A6F76 /* SDWebImage in Frameworks */,
 				9584D4C12FAD33AE00F1509B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				958BD1E42FB13905007A6F76 /* LeaguesViewController.swift */,
+				958BD1ED2FB144F0007A6F76 /* LeagueTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 			name = OverTime;
 			packageProductDependencies = (
 				9584D4C02FAD33AE00F1509B /* Alamofire */,
+				958BD1EB2FB13DFE007A6F76 /* SDWebImage */,
 			);
 			productName = OverTime;
 			productReference = 95867B272FA9646200610EC5 /* OverTime.app */;
@@ -352,6 +358,7 @@
 			mainGroup = 95867B1E2FA9646200610EC5;
 			packageReferences = (
 				9584D4BF2FAD33AE00F1509B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				958BD1EA2FB13DFE007A6F76 /* XCRemoteSwiftPackageReference "sdwebimage" */,
 			);
 			productRefGroup = 95867B282FA9646200610EC5 /* Products */;
 			projectDirPath = "";
@@ -388,6 +395,7 @@
 				0CB657072FAB4EE800CD3A31 /* AppRouterProtocol.swift in Sources */,
 				0CB656EE2FAB29EB00CD3A31 /* SplashPresenter.swift in Sources */,
 				0CB656E22FAB22D600CD3A31 /* UIFont+AppFont.swift in Sources */,
+				958BD1EE2FB144F0007A6F76 /* LeagueTableViewCell.swift in Sources */,
 				958BD1E72FB139E2007A6F76 /* LeaguePresenterProtocol.swift in Sources */,
 				0CB657052FAB4ED000CD3A31 /* DependencyContainerProtocol.swift in Sources */,
 				0CB656FC2FAB3B2A00CD3A31 /* SplashPresenterProtocol.swift in Sources */,
@@ -640,6 +648,14 @@
 				version = 5.8.1;
 			};
 		};
+		958BD1EA2FB13DFE007A6F76 /* XCRemoteSwiftPackageReference "sdwebimage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sdwebimage/sdwebimage";
+			requirement = {
+				kind = exactVersion;
+				version = 5.15.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -647,6 +663,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9584D4BF2FAD33AE00F1509B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		958BD1EB2FB13DFE007A6F76 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 958BD1EA2FB13DFE007A6F76 /* XCRemoteSwiftPackageReference "sdwebimage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

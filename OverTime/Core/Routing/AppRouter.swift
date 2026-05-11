@@ -42,4 +42,16 @@ final class AppRouter: AppRouterProtocol {
         let tabBar = container.makeMaingTabBarController(router: self)
             root?.transition(to: tabBar, duration: 0.3)
         }
+    func showLeagues(sport: SportType, navigationController: UINavigationController) {
+        print("📱 Loading LeagueViewController XIB")
+        let presenter = AllLeaguesPresenter(router: self, sport: sport)
+        let vc = LeagueViewController.create(presenter: presenter, sport: sport)
+        presenter.attachView(vc)
+        navigationController.pushViewController(vc, animated: true)
+    }
+     
+    func showLeagueDetails(league: League, sport: SportType) {
+        print("navigate to league details: \(league.leagueName ?? "")")
+    }
+    
 }

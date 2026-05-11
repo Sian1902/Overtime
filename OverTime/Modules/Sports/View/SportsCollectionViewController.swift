@@ -72,8 +72,7 @@ class SportsCollectionViewController: UICollectionViewController {
         return cell
     }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        presenter.didSelectedSport(at:indexPath.row)
+        presenter.didSelectedSport(at: indexPath.row, navigationController: navigationController!)
     }
 }
 extension SportsCollectionViewController : SportsView{

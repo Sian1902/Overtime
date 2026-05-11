@@ -26,7 +26,7 @@
         <!--League View Controller-->
         <scene sceneID="8Rv-eO-i2n">
             <objects>
-                <viewController id="WjG-Zy-4zz" customClass="LeagueViewController" customModule="OverTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LeagueViewController" id="WjG-Zy-4zz" customClass="LeagueViewController" customModule="OverTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h55-gK-ys3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
