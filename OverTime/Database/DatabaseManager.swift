@@ -13,7 +13,7 @@ class DatabaseManager : DatabaseManagerProtocol{
     init(containerName: String = "OverTime"){
         persistentContainer = NSPersistentContainer(name: containerName)
         persistentContainer.loadPersistentStores{ _ , error in
-            if let error {fatalError("CoreData failed : \(error)")}
+            if let _=error {fatalError("CoreData failed : \(error)")}
         }
     }
     private var context : NSManagedObjectContext{

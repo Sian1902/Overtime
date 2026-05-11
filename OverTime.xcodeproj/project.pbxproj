@@ -12,7 +12,6 @@
 		0C7EE3892FB150D9001B6CAF /* FavoriteLeague.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7EE3882FB150D9001B6CAF /* FavoriteLeague.swift */; };
 		0C7EE38C2FB1517D001B6CAF /* DatabaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7EE38B2FB1517D001B6CAF /* DatabaseManagerProtocol.swift */; };
 		0C7EE38E2FB15187001B6CAF /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7EE38D2FB15187001B6CAF /* DatabaseManager.swift */; };
-		0C7EE3912FB15214001B6CAF /* OverTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C7EE38F2FB15214001B6CAF /* OverTime.xcdatamodeld */; };
 		0CB656E22FAB22D600CD3A31 /* UIFont+AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656E12FAB22D600CD3A31 /* UIFont+AppFont.swift */; };
 		0CB656E42FAB230E00CD3A31 /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */; };
 		0CB656EE2FAB29EB00CD3A31 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656ED2FAB29EB00CD3A31 /* SplashPresenter.swift */; };
@@ -27,6 +26,7 @@
 		0CB6570B2FAB591500CD3A31 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB6570A2FAB591500CD3A31 /* SplashViewController.xib */; };
 		0CEEBD922FAF4D6A00B3AEF1 /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEEBD912FAF4D6A00B3AEF1 /* TabBarConfigurator.swift */; };
 		0CEEBD942FAF615E00B3AEF1 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEEBD932FAF615E00B3AEF1 /* RootContainerViewController.swift */; };
+		957CF9A22FB27AF400F2881F /* OverTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 957CF9A02FB27AF400F2881F /* OverTime.xcdatamodeld */; };
 		9584D4BB2FAD306500F1509B /* SportsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584D4BA2FAD306500F1509B /* SportsModels.swift */; };
 		9584D4C12FAD33AE00F1509B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9584D4C02FAD33AE00F1509B /* Alamofire */; };
 		9584D4C62FAD36BC00F1509B /* SportsAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584D4C32FAD36BC00F1509B /* SportsAPIProtocol.swift */; };
@@ -58,7 +58,6 @@
 		0C7EE3882FB150D9001B6CAF /* FavoriteLeague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLeague.swift; sourceTree = "<group>"; };
 		0C7EE38B2FB1517D001B6CAF /* DatabaseManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerProtocol.swift; sourceTree = "<group>"; };
 		0C7EE38D2FB15187001B6CAF /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
-		0C7EE3902FB15214001B6CAF /* OverTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OverTime.xcdatamodel; sourceTree = "<group>"; };
 		0CB656E12FAB22D600CD3A31 /* UIFont+AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+AppFont.swift"; sourceTree = "<group>"; };
 		0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
 		0CB656ED2FAB29EB00CD3A31 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		0CB6570A2FAB591500CD3A31 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		0CEEBD912FAF4D6A00B3AEF1 /* TabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
 		0CEEBD932FAF615E00B3AEF1 /* RootContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContainerViewController.swift; sourceTree = "<group>"; };
+		957CF9A12FB27AF400F2881F /* OverTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OverTime.xcdatamodel; sourceTree = "<group>"; };
 		9584D4BA2FAD306500F1509B /* SportsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsModels.swift; sourceTree = "<group>"; };
 		9584D4C32FAD36BC00F1509B /* SportsAPIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsAPIProtocol.swift; sourceTree = "<group>"; };
 		9584D4C42FAD36BC00F1509B /* SportsAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsAPIManager.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 			children = (
 				0C7EE38B2FB1517D001B6CAF /* DatabaseManagerProtocol.swift */,
 				0C7EE38D2FB15187001B6CAF /* DatabaseManager.swift */,
-				0C7EE38F2FB15214001B6CAF /* OverTime.xcdatamodeld */,
+				957CF9A02FB27AF400F2881F /* OverTime.xcdatamodeld */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -413,6 +413,7 @@
 				9584D4BB2FAD306500F1509B /* SportsModels.swift in Sources */,
 				0C7EE38C2FB1517D001B6CAF /* DatabaseManagerProtocol.swift in Sources */,
 				95867B2F2FA9646200610EC5 /* ViewController.swift in Sources */,
+				957CF9A22FB27AF400F2881F /* OverTime.xcdatamodeld in Sources */,
 				0CB656FE2FAB3B9B00CD3A31 /* SplashView.swift in Sources */,
 				0CB657072FAB4EE800CD3A31 /* AppRouterProtocol.swift in Sources */,
 				0CB656EE2FAB29EB00CD3A31 /* SplashPresenter.swift in Sources */,
@@ -436,7 +437,6 @@
 				0CEEBD922FAF4D6A00B3AEF1 /* TabBarConfigurator.swift in Sources */,
 				9584D4C72FAD36BC00F1509B /* SportsAPIManager.swift in Sources */,
 				0CEEBD942FAF615E00B3AEF1 /* RootContainerViewController.swift in Sources */,
-				0C7EE3912FB15214001B6CAF /* OverTime.xcdatamodeld in Sources */,
 				9584D4D92FAD3BD100F1509B /* Sport.swift in Sources */,
 				9584D4D32FAD3B6300F1509B /* SportsPresenter.swift in Sources */,
 				9584D4C62FAD36BC00F1509B /* SportsAPIProtocol.swift in Sources */,
@@ -696,14 +696,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		0C7EE38F2FB15214001B6CAF /* OverTime.xcdatamodeld */ = {
+		957CF9A02FB27AF400F2881F /* OverTime.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0C7EE3902FB15214001B6CAF /* OverTime.xcdatamodel */,
+				957CF9A12FB27AF400F2881F /* OverTime.xcdatamodel */,
 			);
-			currentVersion = 0C7EE3902FB15214001B6CAF /* OverTime.xcdatamodel */;
-			name = OverTime.xcdatamodeld;
-			path = /Users/monazarea/Documents/ios/Swift/Project/Overtime/OverTime/Database/OverTime.xcdatamodeld;
+			currentVersion = 957CF9A12FB27AF400F2881F /* OverTime.xcdatamodel */;
+			path = OverTime.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
