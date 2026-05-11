@@ -25,6 +25,7 @@ class LeagueViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        hidesBottomBarWhenPushed = true
         setupUI()
         presenter.attachView(self)
         activityIndicator.startAnimating()

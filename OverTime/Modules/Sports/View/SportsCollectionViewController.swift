@@ -57,7 +57,6 @@ class SportsCollectionViewController: UICollectionViewController {
     
     
 
-    // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return presenter.SportsNumber()
@@ -71,6 +70,7 @@ class SportsCollectionViewController: UICollectionViewController {
         
         return cell
     }
+    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         presenter.didSelectedSport(at: indexPath.row, navigationController: navigationController!)
     }

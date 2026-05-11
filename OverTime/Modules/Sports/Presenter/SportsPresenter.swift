@@ -7,9 +7,6 @@ class SportsPresenter: SportsPresenterProtocol {
         Sport(name: "Basketball", imageName: "basketball"),
         Sport(name: "Football", imageName: "football"),
         Sport(name: "Tennis", imageName: "tennis"),
-        Sport(name: "American Football", imageName: "americanFootball"),
-        Sport(name: "Baseball", imageName: "baseball"),
-        Sport(name: "Hockey", imageName: "hockey"),
         Sport(name: "Cricket", imageName: "cricket")
     ]
 

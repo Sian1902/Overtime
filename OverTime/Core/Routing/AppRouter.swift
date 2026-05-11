@@ -43,10 +43,10 @@ final class AppRouter: AppRouterProtocol {
             root?.transition(to: tabBar, duration: 0.3)
         }
     func showLeagues(sport: SportType, navigationController: UINavigationController) {
-        print("📱 Loading LeagueViewController XIB")
         let presenter = AllLeaguesPresenter(router: self, sport: sport)
         let vc = LeagueViewController.create(presenter: presenter, sport: sport)
         presenter.attachView(vc)
+        vc.hidesBottomBarWhenPushed = true
         navigationController.pushViewController(vc, animated: true)
     }
      
