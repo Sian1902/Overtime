@@ -78,7 +78,7 @@ class SportsAPIManager: SportsAPIProtocol {
             "met": "Fixtures",
             "APIkey": NetworkConstants.apiKey,
             "leagueId": leagueId,
-            "from": oneYearAgoString(),
+            "from": twoWeeksAgoString(),
             "to": todayString()
         ]
         request(url: url, parameters: parameters, completion: completion)
@@ -92,6 +92,11 @@ class SportsAPIManager: SportsAPIProtocol {
             "leagueId": leagueId
         ]
         request(url: url, parameters: parameters, completion: completion)
+    }
+    
+    private func twoWeeksAgoString() -> String {
+        let twoWeeksAgo = Calendar.current.date(byAdding: .day, value: -14, to: Date()) ?? Date()
+        return dateString(from: twoWeeksAgo)
     }
 
     func fetchUpcomingFixturesForTeam(sport: SportType, teamId: Int, completion: @escaping (Result<[Fixture], NetworkError>) -> Void) {

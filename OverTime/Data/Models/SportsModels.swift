@@ -85,18 +85,16 @@ struct Team: Decodable {
     let teamFounded: String?
     let teamDescription: String?
     let teamStadium: String?
-    let coachName: String?
     let venue: String?
 
     enum CodingKeys: String, CodingKey {
         case teamKey = "team_key"
         case teamName = "team_name"
-        case teamBadge = "team_badge"
+        case teamBadge = "team_logo"
         case teamCountry = "team_country"
         case teamFounded = "team_founded"
         case teamDescription = "team_description"
         case teamStadium = "team_stadium"
-        case coachName = "coaches"
         case venue = "venue"
     }
 }

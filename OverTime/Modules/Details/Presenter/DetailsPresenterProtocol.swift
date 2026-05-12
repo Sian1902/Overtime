@@ -1,18 +1,14 @@
-//
-//  TeamDetailsPresenter.swift
-//  OverTime
-//
-//  Created by Mona Zarea on 11/05/2026.
-//
-
 import Foundation
+
 protocol DetailsPresenterProtocol: AnyObject {
     func attachView(_ view: DetailsView)
     func viewDidLoad()
-    
-    func numberOfUpcomingItems() -> Int
-    func numberOfLatestItems() -> Int
+    func numberOfSections() -> Int
+    func numberOfItems(in section: Int) -> Int
+    func sectionTitle(for section: Int) -> String
     func getUpcomingFixture(at index: Int) -> Fixture
     func getLatestFixture(at index: Int) -> Fixture
-    
+    func getTeam(at index: Int) -> Team
+    func toggleFavorite()
+    func isFavorite() -> Bool
 }

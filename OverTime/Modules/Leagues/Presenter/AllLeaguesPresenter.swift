@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 class AllLeaguesPresenter: LeaguePresenterProtocol {
 
@@ -7,6 +8,7 @@ class AllLeaguesPresenter: LeaguePresenterProtocol {
     private let sport: SportType
     private let database: DatabaseManagerProtocol
     private var leagues: [League] = []
+    private weak var navigationController: UINavigationController?
 
     init(router: AppRouterProtocol, sport: SportType, database: DatabaseManagerProtocol = DatabaseManager()) {
         self.router = router
@@ -16,6 +18,7 @@ class AllLeaguesPresenter: LeaguePresenterProtocol {
 
     func attachView(_ view: LeagueView) {
         self.view = view
+        self.navigationController = (view as? UIViewController)?.navigationController
     }
 
     func loadLeagues() {
@@ -32,23 +35,19 @@ class AllLeaguesPresenter: LeaguePresenterProtocol {
         }
     }
 
-    func leaguesCount() -> Int {
-        return leagues.count
-    }
+    func leaguesCount() -> Int { return leagues.count }
 
-    func getLeague(at index: Int) -> League {
-        return leagues[index]
-    }
+    func getLeague(at index: Int) -> League { return leagues[index] }
 
     func didSelectLeague(at index: Int) {
+        guard let navigationController = navigationController else { return }
         let league = leagues[index]
-        router.showLeagueDetails(league: league, sport: sport)
+        router.showLeagueDetails(league: league, sport: sport, navigationController: navigationController)
     }
 
     func toggleFavorite(at index: Int) {
         let league = leagues[index]
         guard let key = league.leagueKey else { return }
-
         if database.isLeagueFavorite(with: key) {
             try? database.delete(by: key)
             view?.updateFavoriteButton(at: index, isFavorite: false)
