@@ -27,10 +27,15 @@ final class DependencyContainer: DependencyContainerProtocol {
         presenter.attachView(vc)
         return vc
     }
-    
+    	
     func makeFavoritesViewController(router: AppRouterProtocol) -> UIViewController {
         let presenter = FavoritesPresenter(router: router)
         let vc = LeagueViewController.create(presenter: presenter)
         return vc
     }
+//
+//    func makeTeamDetailsViewController(router: AppRouterProtocol, team: Team, sport: SportType) -> UIViewController {
+//
+//    }
+
 }

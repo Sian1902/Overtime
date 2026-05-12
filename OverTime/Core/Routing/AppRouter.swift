@@ -54,4 +54,9 @@ final class AppRouter: AppRouterProtocol {
         print("navigate to league details: \(league.leagueName ?? "")")
     }
     
+//  
+//    func showTeamDetails(team: Team, sport: SportType, from navigationController: UINavigationController) {
+//
+//    }
+    
 }
