@@ -15,20 +15,24 @@ class LeagueViewController: UIViewController {
         return ai
     }()
 
-    static func create(presenter: LeaguePresenterProtocol, sport: SportType) -> LeagueViewController {
+    static func create(presenter: LeaguePresenterProtocol, sport: SportType? = nil) -> LeagueViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "LeagueViewController") as! LeagueViewController
         vc.presenter = presenter
         vc.sport = sport
         return vc
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        hidesBottomBarWhenPushed = true
         setupUI()
+        title = sport == nil ? "Favorites" : "Leagues"
         presenter.attachView(self)
         activityIndicator.startAnimating()
+        presenter.loadLeagues()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         presenter.loadLeagues()
     }
 
@@ -82,6 +86,7 @@ extension LeagueViewController: LeagueCellDelegate {
 }
 
 extension LeagueViewController: LeagueView {
+
     func showLeagues(_ leagues: [League]) {
         activityIndicator.stopAnimating()
         leaguesTable.reloadData()
@@ -92,5 +97,11 @@ extension LeagueViewController: LeagueView {
         let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
+    }
+
+    func updateFavoriteButton(at index: Int, isFavorite: Bool) {
+        let indexPath = IndexPath(row: index, section: 0)
+        guard let cell = leaguesTable.cellForRow(at: indexPath) as? LeagueTableViewCell else { return }
+        cell.setFavorite(isFavorite)
     }
 }

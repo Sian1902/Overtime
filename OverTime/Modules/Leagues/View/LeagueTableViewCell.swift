@@ -78,7 +78,6 @@ class LeagueTableViewCell: UITableViewCell {
     }
 
     @objc private func favoriteTapped() {
-        favoriteButton.isSelected.toggle()
         delegate?.didTapFavorite(in: self)
     }
 
@@ -92,6 +91,10 @@ class LeagueTableViewCell: UITableViewCell {
         } else {
             leagueImageView.image = UIImage(systemName: "sportscourt")
         }
+    }
+
+    func setFavorite(_ isFavorite: Bool) {
+        favoriteButton.isSelected = isFavorite
     }
 
     private func loadImage(from url: URL) {

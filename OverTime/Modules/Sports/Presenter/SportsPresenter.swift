@@ -14,9 +14,6 @@ class SportsPresenter: SportsPresenterProtocol {
         .basketball,
         .football,
         .tennis,
-        .football,
-        .baseball,
-        .football,
         .cricket
     ]
 

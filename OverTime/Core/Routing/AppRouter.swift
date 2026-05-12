@@ -39,7 +39,7 @@ final class AppRouter: AppRouterProtocol {
 
 
     func showMainTabBar() {
-        let tabBar = container.makeMaingTabBarController(router: self)
+        let tabBar = container.makeMainTabBarController(router: self)
             root?.transition(to: tabBar, duration: 0.3)
         }
     func showLeagues(sport: SportType, navigationController: UINavigationController) {

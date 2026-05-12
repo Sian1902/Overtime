@@ -5,12 +5,13 @@ class AllLeaguesPresenter: LeaguePresenterProtocol {
     private weak var view: LeagueView?
     private let router: AppRouterProtocol
     private let sport: SportType
+    private let database: DatabaseManagerProtocol
     private var leagues: [League] = []
-    private var favorites: Set<Int> = []
 
-    init(router: AppRouterProtocol, sport: SportType) {
+    init(router: AppRouterProtocol, sport: SportType, database: DatabaseManagerProtocol = DatabaseManager()) {
         self.router = router
         self.sport = sport
+        self.database = database
     }
 
     func attachView(_ view: LeagueView) {
@@ -45,16 +46,32 @@ class AllLeaguesPresenter: LeaguePresenterProtocol {
     }
 
     func toggleFavorite(at index: Int) {
-        let key = leagues[index].leagueKey ?? -1
-        if favorites.contains(key) {
-            favorites.remove(key)
+        let league = leagues[index]
+        guard let key = league.leagueKey else { return }
+
+        if database.isLeagueFavorite(with: key) {
+            try? database.delete(by: key)
+            view?.updateFavoriteButton(at: index, isFavorite: false)
         } else {
-            favorites.insert(key)
+            let favorite = FavoriteLeague(
+                leagueKey: key,
+                leagueName: league.leagueName ?? "",
+                leagueYear: league.leagueYear ?? "",
+                leagueSeason: league.leagueSeason ?? "",
+                leagueLogo: league.leagueLogo ?? league.leagueBadge ?? "",
+                countryLogo: league.countryLogo ?? "",
+                countryKey: league.countryKey ?? 0,
+                countryName: league.countryName ?? "",
+                leagueBadge: league.leagueBadge ?? league.leagueLogo ?? "",
+                sportType: sport
+            )
+            try? database.save(league: favorite)
+            view?.updateFavoriteButton(at: index, isFavorite: true)
         }
     }
 
     func isFavorite(at index: Int) -> Bool {
-        let key = leagues[index].leagueKey ?? -1
-        return favorites.contains(key)
+        guard let key = leagues[index].leagueKey else { return false }
+        return database.isLeagueFavorite(with: key)
     }
 }

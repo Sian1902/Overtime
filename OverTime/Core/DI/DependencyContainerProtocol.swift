@@ -6,10 +6,9 @@
 //
 
 import UIKit
-protocol DependencyContainerProtocol{
+protocol DependencyContainerProtocol {
     func makeSplashViewController(router: AppRouterProtocol) -> UIViewController
- //   func makeOnboardingViewController(router: AppRouterProtocol) -> UIViewController
-   // func makeSportsViewController(router: AppRouterProtocol) -> UIViewController
-    func makeMaingTabBarController(router: AppRouterProtocol) -> UITabBarController
-    
+    func makeSportsViewController(router: AppRouterProtocol) -> UIViewController
+    func makeFavoritesViewController(router: AppRouterProtocol) -> UIViewController
+    func makeMainTabBarController(router: AppRouterProtocol) -> UIViewController
 }
