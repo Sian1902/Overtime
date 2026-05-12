@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 class LeagueDetailsPresenter: DetailsPresenterProtocol {
 
@@ -11,6 +12,8 @@ class LeagueDetailsPresenter: DetailsPresenterProtocol {
     private var upcomingFixtures: [Fixture] = []
     private var latestFixtures: [Fixture] = []
     private var teams: [Team] = []
+    private weak var navigationController: UINavigationController?
+
 
     private let dispatchGroup = DispatchGroup()
 
@@ -23,6 +26,8 @@ class LeagueDetailsPresenter: DetailsPresenterProtocol {
 
     func attachView(_ view: DetailsView) {
         self.view = view
+        self.navigationController = (view as? UIViewController)?.navigationController
+
     }
 
     func viewDidLoad() {
@@ -115,4 +120,13 @@ class LeagueDetailsPresenter: DetailsPresenterProtocol {
         guard let key = league.leagueKey else { return false }
         return database.isLeagueFavorite(with: key)
     }
+
+    func didSelectTeam(at index: Int){
+        guard let navigationController = navigationController else {return}
+        let team = teams[index]
+        router.showTeamDetails(team: team, sport: sport, navigationController: navigationController)
+    }
+    
+    func isFavoriteSupported() -> Bool { return true }
+    
 }

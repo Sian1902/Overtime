@@ -4,6 +4,7 @@ final class DependencyContainer: DependencyContainerProtocol {
     
     private lazy var userDefault: UserDefaultsManagerProtocol = UserDefaultManager()
     
+    
     func makeSplashViewController(router: AppRouterProtocol) -> UIViewController {
         let presenter = SplashPresenter(router: router, userdefault: userDefault)
         let vc = SplashViewController(
@@ -33,9 +34,11 @@ final class DependencyContainer: DependencyContainerProtocol {
         let vc = LeagueViewController.create(presenter: presenter)
         return vc
     }
-//
-//    func makeTeamDetailsViewController(router: AppRouterProtocol, team: Team, sport: SportType) -> UIViewController {
-//
-//    }
+
+    func makeTeamDetailsViewController(router: AppRouterProtocol, team: Team, sport: SportType) -> UIViewController {
+        let presenter = TeamDetailsPresenter(router: router, apiManager: SportsAPIManager.shared, team: team, sport: sport)
+        let vc = DetailsViewController.create(presenter: presenter)
+        return vc
+    }
 
 }

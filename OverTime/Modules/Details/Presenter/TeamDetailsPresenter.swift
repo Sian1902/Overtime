@@ -1,7 +1,8 @@
 import Foundation
 
 final class TeamDetailsPresenter: DetailsPresenterProtocol {
-
+    
+    
     private weak var view: DetailsView?
     private let router: AppRouterProtocol
     private let apiManager: SportsAPIProtocol
@@ -10,6 +11,7 @@ final class TeamDetailsPresenter: DetailsPresenterProtocol {
     private var upcomingFixtures: [Fixture] = []
     private var latestFixtures: [Fixture] = []
     private var completedRequests = 0
+    private let dispatchGroup = DispatchGroup()
 
     init(router: AppRouterProtocol,
          apiManager: SportsAPIProtocol,
@@ -32,24 +34,32 @@ final class TeamDetailsPresenter: DetailsPresenterProtocol {
     }
 
     private func fetchFixtures() {
-        view?.showLoading()
-        completedRequests = 0
+        guard let teamId = team.teamKey else { return }
 
-        apiManager.fetchUpcomingFixturesForTeam(sport: sport, teamId: team.teamKey ?? 0) { [weak self] result in
-            DispatchQueue.main.async {
-                if case .success(let fixtures) = result { self?.upcomingFixtures = fixtures }
-                if case .failure(let error) = result { self?.view?.showError(message: error.localizedDescription) }
-                self?.requestDidComplete()
-            }
-        }
+                dispatchGroup.enter()
+                apiManager.fetchUpcomingFixturesForTeam(sport: sport, teamId: teamId) { [weak self] result in
+                    if case .success(let fixtures) = result {
+                        self?.upcomingFixtures = fixtures
+                    }
+                    self?.dispatchGroup.leave()
+                }
 
-        apiManager.fetchLatestFixturesForTeam(sport: sport, teamId: team.teamKey ?? 0) { [weak self] result in
-            DispatchQueue.main.async {
-                if case .success(let fixtures) = result { self?.latestFixtures = fixtures }
-                if case .failure(let error) = result { self?.view?.showError(message: error.localizedDescription) }
-                self?.requestDidComplete()
-            }
-        }
+                dispatchGroup.enter()
+                apiManager.fetchLatestFixturesForTeam(sport: sport, teamId: teamId) { [weak self] result in
+                    if case .success(let fixtures) = result {
+                        self?.latestFixtures = fixtures
+                    }
+                    self?.dispatchGroup.leave()
+                }
+
+                dispatchGroup.notify(queue: .main) { [weak self] in
+                    self?.view?.hideLoading()
+                    self?.view?.reloadData()
+                    
+                    if (self?.upcomingFixtures.isEmpty ?? true) && (self?.latestFixtures.isEmpty ?? true) {
+                         self?.view?.showError(message: "No data available for this team")
+                    }
+                }
     }
 
     private func requestDidComplete() {
@@ -84,4 +94,9 @@ final class TeamDetailsPresenter: DetailsPresenterProtocol {
 
     func toggleFavorite() {}
     func isFavorite() -> Bool { return false }
+    
+    func didSelectTeam(at index: Int) {
+        
+    }
+    func isFavoriteSupported() -> Bool { return false }
 }

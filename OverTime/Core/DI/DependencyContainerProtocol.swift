@@ -11,4 +11,5 @@ protocol DependencyContainerProtocol {
     func makeSportsViewController(router: AppRouterProtocol) -> UIViewController
     func makeFavoritesViewController(router: AppRouterProtocol) -> UIViewController
     func makeMainTabBarController(router: AppRouterProtocol) -> UIViewController
+    func makeTeamDetailsViewController(router: AppRouterProtocol, team: Team, sport: SportType) -> UIViewController 
 }

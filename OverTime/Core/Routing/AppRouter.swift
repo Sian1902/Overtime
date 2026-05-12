@@ -39,4 +39,11 @@ final class AppRouter: AppRouterProtocol {
         vc.hidesBottomBarWhenPushed = true
         navigationController.pushViewController(vc, animated: true)
     }
-}    
+    
+    func showTeamDetails(team : Team, sport: SportType, navigationController:
+        UINavigationController){
+        let vc = container.makeTeamDetailsViewController(router: self, team: team, sport: sport)
+        vc.hidesBottomBarWhenPushed = true
+        navigationController.pushViewController(vc, animated: true)
+    }
+}

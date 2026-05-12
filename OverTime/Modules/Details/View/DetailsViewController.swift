@@ -143,6 +143,7 @@ extension DetailsViewController: UICollectionViewDataSource, UICollectionViewDel
         default:
             return UICollectionViewCell()
         }
+        
     }
 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -154,6 +155,10 @@ extension DetailsViewController: UICollectionViewDataSource, UICollectionViewDel
         header.configure(with: presenter.sectionTitle(for: indexPath.section))
         return header
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter.didSelectTeam(at: indexPath.row)
+    }
+   
 }
 
 extension DetailsViewController: DetailsView {
@@ -168,6 +173,11 @@ extension DetailsViewController: DetailsView {
     }
     func setTitle(_ title: String) { self.title = title }
     func setFavoriteState(_ isFavorite: Bool) {
+        
+        guard presenter.isFavoriteSupported() else {
+                navigationItem.rightBarButtonItem = nil
+                return
+            }
         let imageName = isFavorite ? "heart.fill" : "heart"
         let button = UIBarButtonItem(
             image: UIImage(systemName: imageName),

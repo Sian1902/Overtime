@@ -11,4 +11,6 @@ protocol DetailsPresenterProtocol: AnyObject {
     func getTeam(at index: Int) -> Team
     func toggleFavorite()
     func isFavorite() -> Bool
+    func didSelectTeam(at index: Int)
+    func isFavoriteSupported() -> Bool
 }
