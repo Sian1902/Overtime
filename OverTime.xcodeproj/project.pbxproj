@@ -37,6 +37,8 @@
 		0CFE91DD2FB4D3B500A24A1F /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE91DC2FB4D3B500A24A1F /* OnboardingPresenter.swift */; };
 		0CFE91E02FB4D43000A24A1F /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE91DF2FB4D43000A24A1F /* OnboardingPageViewController.swift */; };
 		0CFE91E22FB4D52800A24A1F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE91E12FB4D52800A24A1F /* OnboardingViewController.swift */; };
+		9570569A2FB50945000EA8B7 /* OverTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957056992FB50945000EA8B7 /* OverTimeTests.swift */; };
+		957056A12FB50990000EA8B7 /* SportsApiManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957056A02FB50990000EA8B7 /* SportsApiManagerTests.swift */; };
 		957CF9A22FB27AF400F2881F /* OverTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 957CF9A02FB27AF400F2881F /* OverTime.xcdatamodeld */; };
 		957CF9A42FB2833B00F2881F /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957CF9A32FB2833B00F2881F /* FavoritePresenter.swift */; };
 		9584D4BB2FAD306500F1509B /* SportsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584D4BA2FAD306500F1509B /* SportsModels.swift */; };
@@ -71,6 +73,16 @@
 		958BD1EE2FB144F0007A6F76 /* LeagueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958BD1ED2FB144F0007A6F76 /* LeagueTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9570569B2FB50945000EA8B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95867B1F2FA9646200610EC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95867B262FA9646200610EC5;
+			remoteInfo = OverTime;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0C0A2D0E2FB284BA00762737 /* TeamDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsPresenter.swift; sourceTree = "<group>"; };
 		0C0A2D102FB2850200762737 /* DetailsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenterProtocol.swift; sourceTree = "<group>"; };
@@ -102,6 +114,9 @@
 		0CFE91DC2FB4D3B500A24A1F /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		0CFE91DF2FB4D43000A24A1F /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		0CFE91E12FB4D52800A24A1F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		957056972FB50945000EA8B7 /* OverTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		957056992FB50945000EA8B7 /* OverTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverTimeTests.swift; sourceTree = "<group>"; };
+		957056A02FB50990000EA8B7 /* SportsApiManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsApiManagerTests.swift; sourceTree = "<group>"; };
 		957CF9A12FB27AF400F2881F /* OverTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OverTime.xcdatamodel; sourceTree = "<group>"; };
 		957CF9A32FB2833B00F2881F /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
 		9584D4BA2FAD306500F1509B /* SportsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsModels.swift; sourceTree = "<group>"; };
@@ -137,6 +152,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		957056942FB50945000EA8B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95867B242FA9646200610EC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,6 +338,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		957056982FB50945000EA8B7 /* OverTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				957056992FB50945000EA8B7 /* OverTimeTests.swift */,
+				957056A02FB50990000EA8B7 /* SportsApiManagerTests.swift */,
+			);
+			path = OverTimeTests;
+			sourceTree = "<group>";
+		};
 		9584D4B92FAD306500F1509B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +400,7 @@
 			isa = PBXGroup;
 			children = (
 				95867B292FA9646200610EC5 /* OverTime */,
+				957056982FB50945000EA8B7 /* OverTimeTests */,
 				95867B282FA9646200610EC5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -377,6 +409,7 @@
 			isa = PBXGroup;
 			children = (
 				95867B272FA9646200610EC5 /* OverTime.app */,
+				957056972FB50945000EA8B7 /* OverTimeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -444,6 +477,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		957056962FB50945000EA8B7 /* OverTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9570569F2FB50945000EA8B7 /* Build configuration list for PBXNativeTarget "OverTimeTests" */;
+			buildPhases = (
+				957056932FB50945000EA8B7 /* Sources */,
+				957056942FB50945000EA8B7 /* Frameworks */,
+				957056952FB50945000EA8B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9570569C2FB50945000EA8B7 /* PBXTargetDependency */,
+			);
+			name = OverTimeTests;
+			productName = OverTimeTests;
+			productReference = 957056972FB50945000EA8B7 /* OverTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		95867B262FA9646200610EC5 /* OverTime */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95867B3B2FA9646400610EC5 /* Build configuration list for PBXNativeTarget "OverTime" */;
@@ -475,6 +526,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					957056962FB50945000EA8B7 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 95867B262FA9646200610EC5;
+					};
 					95867B262FA9646200610EC5 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -498,11 +553,19 @@
 			projectRoot = "";
 			targets = (
 				95867B262FA9646200610EC5 /* OverTime */,
+				957056962FB50945000EA8B7 /* OverTimeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		957056952FB50945000EA8B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95867B252FA9646200610EC5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -518,6 +581,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		957056932FB50945000EA8B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9570569A2FB50945000EA8B7 /* OverTimeTests.swift in Sources */,
+				957056A12FB50990000EA8B7 /* SportsApiManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95867B232FA9646200610EC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -582,6 +654,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9570569C2FB50945000EA8B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95867B262FA9646200610EC5 /* OverTime */;
+			targetProxy = 9570569B2FB50945000EA8B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		95867B302FA9646200610EC5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -602,6 +682,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9570569D2FB50945000EA8B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OverTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverTime.app/OverTime";
+			};
+			name = Debug;
+		};
+		9570569E2FB50945000EA8B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OverTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OverTime.app/OverTime";
+			};
+			name = Release;
+		};
 		95867B392FA9646400610EC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -775,6 +889,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9570569F2FB50945000EA8B7 /* Build configuration list for PBXNativeTarget "OverTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9570569D2FB50945000EA8B7 /* Debug */,
+				9570569E2FB50945000EA8B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		95867B222FA9646200610EC5 /* Build configuration list for PBXProject "OverTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
