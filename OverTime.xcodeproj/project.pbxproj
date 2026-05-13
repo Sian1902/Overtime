@@ -39,6 +39,8 @@
 		0CFE91E22FB4D52800A24A1F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE91E12FB4D52800A24A1F /* OnboardingViewController.swift */; };
 		9570569A2FB50945000EA8B7 /* OverTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957056992FB50945000EA8B7 /* OverTimeTests.swift */; };
 		957056A12FB50990000EA8B7 /* SportsApiManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957056A02FB50990000EA8B7 /* SportsApiManagerTests.swift */; };
+		957056A32FB511FA000EA8B7 /* DBMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957056A22FB511FA000EA8B7 /* DBMock.swift */; };
+		957056A52FB5124B000EA8B7 /* DBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957056A42FB5124B000EA8B7 /* DBTest.swift */; };
 		957CF9A22FB27AF400F2881F /* OverTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 957CF9A02FB27AF400F2881F /* OverTime.xcdatamodeld */; };
 		957CF9A42FB2833B00F2881F /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957CF9A32FB2833B00F2881F /* FavoritePresenter.swift */; };
 		9584D4BB2FAD306500F1509B /* SportsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584D4BA2FAD306500F1509B /* SportsModels.swift */; };
@@ -117,6 +119,8 @@
 		957056972FB50945000EA8B7 /* OverTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		957056992FB50945000EA8B7 /* OverTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverTimeTests.swift; sourceTree = "<group>"; };
 		957056A02FB50990000EA8B7 /* SportsApiManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsApiManagerTests.swift; sourceTree = "<group>"; };
+		957056A22FB511FA000EA8B7 /* DBMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMock.swift; sourceTree = "<group>"; };
+		957056A42FB5124B000EA8B7 /* DBTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBTest.swift; sourceTree = "<group>"; };
 		957CF9A12FB27AF400F2881F /* OverTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OverTime.xcdatamodel; sourceTree = "<group>"; };
 		957CF9A32FB2833B00F2881F /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
 		9584D4BA2FAD306500F1509B /* SportsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsModels.swift; sourceTree = "<group>"; };
@@ -343,6 +347,8 @@
 			children = (
 				957056992FB50945000EA8B7 /* OverTimeTests.swift */,
 				957056A02FB50990000EA8B7 /* SportsApiManagerTests.swift */,
+				957056A22FB511FA000EA8B7 /* DBMock.swift */,
+				957056A42FB5124B000EA8B7 /* DBTest.swift */,
 			);
 			path = OverTimeTests;
 			sourceTree = "<group>";
@@ -585,6 +591,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957056A32FB511FA000EA8B7 /* DBMock.swift in Sources */,
+				957056A52FB5124B000EA8B7 /* DBTest.swift in Sources */,
 				9570569A2FB50945000EA8B7 /* OverTimeTests.swift in Sources */,
 				957056A12FB50990000EA8B7 /* SportsApiManagerTests.swift in Sources */,
 			);
