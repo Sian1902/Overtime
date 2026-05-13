@@ -156,7 +156,16 @@ extension DetailsViewController: UICollectionViewDataSource, UICollectionViewDel
         return header
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter.didSelectTeam(at: indexPath.row)
+        switch indexPath.section {
+        case 2:
+            presenter.didSelectTeam(at: indexPath.row)
+        case 0:
+            break
+        case 1:
+            break
+        default:
+            break
+        }
     }
    
 }
