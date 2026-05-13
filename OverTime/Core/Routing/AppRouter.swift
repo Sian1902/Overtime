@@ -17,7 +17,8 @@ final class AppRouter: AppRouterProtocol {
     }
 
     func showOnboarding() {
-        print("onboarding")
+        let vc = container.makeOnboardingViewController(router: self)
+        root?.transition(to: vc, duration: 0.3)
     }
 
     func showMainTabBar() {
@@ -46,4 +47,6 @@ final class AppRouter: AppRouterProtocol {
         vc.hidesBottomBarWhenPushed = true
         navigationController.pushViewController(vc, animated: true)
     }
+    
+    
 }

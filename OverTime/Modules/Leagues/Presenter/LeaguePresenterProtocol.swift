@@ -4,6 +4,7 @@ protocol LeagueView: AnyObject {
     func showLeagues(_ leagues: [League])
     func showError(_ message: String)
     func updateFavoriteButton(at index: Int, isFavorite: Bool)
+    func showEmptyState(_ isVisible: Bool)
 }
 
 protocol LeaguePresenterProtocol {

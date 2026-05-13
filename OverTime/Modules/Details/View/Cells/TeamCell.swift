@@ -57,7 +57,7 @@ class TeamCell: UICollectionViewCell {
         if let urlString = team.teamBadge, !urlString.isEmpty, let url = URL(string: urlString) {
             loadImage(from: url)
         } else {
-            teamImageView.image = UIImage(systemName: "person.3.fill")
+            teamImageView.image = UIImage(named: "team")
         }
     }	
 

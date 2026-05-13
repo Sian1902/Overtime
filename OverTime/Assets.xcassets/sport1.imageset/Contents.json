@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "a_high_angle_cinematic_shot_of_a_professional_runner_mid_stride_on_a_city.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

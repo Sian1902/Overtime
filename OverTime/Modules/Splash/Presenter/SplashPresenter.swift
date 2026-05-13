@@ -25,11 +25,10 @@ final class SplashPresenter: SplashPresenterProtocol {
 
     
     func animationDidFinished() {
-//        if userDefault.hasSeenOnboarding {
-//            router.showHome()
-//        } else {
-//            router.showOnboarding()
-//        }
-        router.showMainTabBar()
+        if userDefault.hasSeenOnboarding {
+            router.showMainTabBar()
+        } else {
+            router.showOnboarding()
+        }
     }
 }

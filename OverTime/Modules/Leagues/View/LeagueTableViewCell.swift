@@ -89,7 +89,7 @@ class LeagueTableViewCell: UITableViewCell {
            let url = URL(string: urlString) {
             loadImage(from: url)
         } else {
-            leagueImageView.image = UIImage(systemName: "sportscourt")
+            leagueImageView.image = UIImage(named: "league")
         }
     }
 

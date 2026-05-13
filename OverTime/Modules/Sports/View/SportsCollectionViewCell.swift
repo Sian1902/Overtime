@@ -10,7 +10,8 @@ import UIKit
 import UIKit
 
 class SportsCollectionViewCell: UICollectionViewCell {
-    
+    static let identifier = "SportsCollectionViewCell"
+
     
     let sportImageView: UIImageView = {
         let iv = UIImageView()

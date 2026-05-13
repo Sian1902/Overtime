@@ -35,6 +35,18 @@ class LeagueViewController: UIViewController {
         super.viewWillAppear(animated)
         presenter.loadLeagues()
     }
+    
+    private let emptyStateLabel: UILabel = {
+            let label = UILabel()
+            label.translatesAutoresizingMaskIntoConstraints = false
+            label.text = "No favorites added yet.\nStart exploring leagues!"
+            label.textColor = .lightGray
+            label.textAlignment = .center
+            label.numberOfLines = 0
+            label.font = .systemFont(ofSize: 18, weight: .medium)
+            label.isHidden = true
+            return label
+        }()
 
     private func setupUI() {
         view.backgroundColor = .appBackground
@@ -57,6 +69,14 @@ class LeagueViewController: UIViewController {
             activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
+        
+        view.addSubview(emptyStateLabel)
+        NSLayoutConstraint.activate([
+            emptyStateLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            emptyStateLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            emptyStateLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            emptyStateLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
+            ])
     }
 }
 
@@ -104,4 +124,9 @@ extension LeagueViewController: LeagueView {
         guard let cell = leaguesTable.cellForRow(at: indexPath) as? LeagueTableViewCell else { return }
         cell.setFavorite(isFavorite)
     }
+    
+    func showEmptyState(_ isVisible: Bool) {
+            emptyStateLabel.isHidden = !isVisible
+            leaguesTable.isHidden = isVisible
+        }
 }

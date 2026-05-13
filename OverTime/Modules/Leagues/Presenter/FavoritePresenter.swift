@@ -38,6 +38,7 @@ class FavoritesPresenter: LeaguePresenterProtocol {
                 )
             }
             view?.showLeagues(leagues)
+            view?.showEmptyState(leagues.isEmpty)
         } catch {
             view?.showError(error.localizedDescription)
         }
@@ -63,6 +64,7 @@ class FavoritesPresenter: LeaguePresenterProtocol {
         try? database.delete(by: key)
         leagues.remove(at: index)
         favorites.removeAll { $0.leagueKey == key }
+        view?.showEmptyState(leagues.isEmpty)
         view?.showLeagues(leagues)
     }
 

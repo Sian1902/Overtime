@@ -9,6 +9,7 @@ class SportsPresenter: SportsPresenterProtocol {
         Sport(name: "Tennis", imageName: "tennis"),
         Sport(name: "Cricket", imageName: "cricket")
     ]
+    
 
     private let sportTypes: [SportType] = [
         .basketball,

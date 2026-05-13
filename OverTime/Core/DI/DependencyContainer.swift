@@ -40,5 +40,11 @@ final class DependencyContainer: DependencyContainerProtocol {
         let vc = DetailsViewController.create(presenter: presenter)
         return vc
     }
+    
+    func makeOnboardingViewController(router: AppRouterProtocol) -> UIViewController {
+        let presenter = OnboardingPresenter(router: router, storage: userDefault)
+        let vc = OnboardingViewController(presenter: presenter)
+        return vc
+    }
 
 }

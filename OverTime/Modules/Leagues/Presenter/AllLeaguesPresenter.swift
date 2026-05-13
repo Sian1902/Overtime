@@ -24,6 +24,7 @@ class AllLeaguesPresenter: LeaguePresenterProtocol {
     func loadLeagues() {
         SportsAPIManager.shared.fetchLeagues(sport: sport) { [weak self] result in
             DispatchQueue.main.async {
+                self?.view?.showEmptyState(false)
                 switch result {
                 case .success(let leagues):
                     self?.leagues = leagues

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-protocol UserDefaultsManagerProtocol{
+protocol UserDefaultsManagerProtocol : AnyObject{
     var hasSeenOnboarding: Bool{set get}
 }
 class UserDefaultManager : UserDefaultsManagerProtocol{

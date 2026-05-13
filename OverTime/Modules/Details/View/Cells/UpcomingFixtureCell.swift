@@ -72,7 +72,7 @@ class UpcomingFixtureCell: UICollectionViewCell {
     }
 
     private func setupUI() {
-        contentView.backgroundColor = UIColor.white.withAlphaComponent(0.05)
+        contentView.backgroundColor = UIColor.white.withAlphaComponent(0.12)
         contentView.layer.cornerRadius = 12
         contentView.layer.borderWidth = 1
         contentView.layer.borderColor = UIColor.appPrimary.withAlphaComponent(0.3).cgColor
@@ -117,6 +117,9 @@ class UpcomingFixtureCell: UICollectionViewCell {
         homeTeamNameLabel.text = fixture.eventHomeTeam
         awayTeamNameLabel.text = fixture.eventAwayTeam
         dateTimeLabel.text = "\(fixture.eventDate ?? "")\n\(fixture.eventTime ?? "")"
+        let placeholder = UIImage(named: "event")
+        homeTeamImageView.image = placeholder
+        awayTeamImageView.image = placeholder
         if let url = URL(string: fixture.homeTeamLogo ?? "") { loadImage(into: homeTeamImageView, from: url) }
         if let url = URL(string: fixture.awayTeamLogo ?? "") { loadImage(into: awayTeamImageView, from: url) }
     }
