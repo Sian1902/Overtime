@@ -50,7 +50,7 @@ class LeagueDetailsPresenter: DetailsPresenterProtocol {
         SportsAPIManager.shared.fetchLatestFixtures(sport: sport, leagueId: leagueId) { [weak self] result in
             if case .success(let fixtures) = result {
                 self?.latestFixtures = fixtures.filter {
-                    let result = $0.eventFinalResult ?? ""
+         	           let result = $0.eventFinalResult ?? ""
                     return !result.isEmpty && result != "? : ?"
                 }
             }

@@ -59,7 +59,7 @@ class FeaturedSportsCardView: UIView {
     
     private let overlayLabel: UILabel = {
         let label = UILabel()
-        label.text = "TRAIN LIKE A PRO"
+        label.text = "Where the Real Game Begins"
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 22, weight: .black)
         label.translatesAutoresizingMaskIntoConstraints = false
