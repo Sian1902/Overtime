@@ -31,3 +31,4 @@ build/
 # If you use SwiftLint
 .swiftlint-cache/
 
+Secret.swift
