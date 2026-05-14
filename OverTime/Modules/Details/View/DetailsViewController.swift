@@ -197,4 +197,5 @@ extension DetailsViewController: DetailsView {
         button.tintColor = .appPrimary
         navigationItem.rightBarButtonItem = button
     }
+    
 }

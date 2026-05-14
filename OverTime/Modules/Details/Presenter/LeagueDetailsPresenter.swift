@@ -124,7 +124,7 @@ class LeagueDetailsPresenter: DetailsPresenterProtocol {
     func didSelectTeam(at index: Int){
         guard let navigationController = navigationController else {return}
         let team = teams[index]
-        router.showTeamDetails(team: team, sport: sport, navigationController: navigationController)
+        router.showTeamDetails(team: team, sport: sport )
     }
     
     func isFavoriteSupported() -> Bool { return true }

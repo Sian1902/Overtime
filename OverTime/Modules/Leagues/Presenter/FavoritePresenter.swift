@@ -1,5 +1,4 @@
 import Foundation
-import UIKit
 import Network
 
 class FavoritesPresenter: LeaguePresenterProtocol {
@@ -9,7 +8,6 @@ class FavoritesPresenter: LeaguePresenterProtocol {
     private let database: DatabaseManagerProtocol
     private var leagues: [League] = []
     private var favorites: [FavoriteLeague] = []
-    private weak var navigationController: UINavigationController?
 
     init(router: AppRouterProtocol, database: DatabaseManagerProtocol = DatabaseManager()) {
         self.router = router
@@ -18,7 +16,6 @@ class FavoritesPresenter: LeaguePresenterProtocol {
 
     func attachView(_ view: LeagueView) {
         self.view = view
-        self.navigationController = (view as? UIViewController)?.navigationController
     }
 
     func loadLeagues() {
@@ -53,10 +50,9 @@ class FavoritesPresenter: LeaguePresenterProtocol {
             view?.showError("No internet connection. Please check your network and try again.")
             return
         }
-        guard let navigationController = navigationController else { return }
         guard let key = leagues[index].leagueKey else { return }
         guard let favorite = favorites.first(where: { $0.leagueKey == key }) else { return }
-        router.showLeagueDetails(league: leagues[index], sport: favorite.sportType, navigationController: navigationController)
+        router.showLeagueDetails(league: leagues[index], sport: favorite.sportType)
     }
 
     func toggleFavorite(at index: Int) {

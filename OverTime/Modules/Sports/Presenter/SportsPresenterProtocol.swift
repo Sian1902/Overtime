@@ -9,7 +9,7 @@ import Foundation
 
 protocol SportsPresenterProtocol {
     func attachView(_ view: SportsView)
-    func didSelectedSport(at index: Int, navigationController: UINavigationController)
+    func didSelectedSport(at index: Int)
     func SportsNumber() -> Int
     func getSport(at index: Int) -> Sport
 }

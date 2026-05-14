@@ -119,7 +119,7 @@ extension SportsCollectionViewController {
     override func collectionView(_ collectionView: UICollectionView,
                                  didSelectItemAt indexPath: IndexPath) {
         guard let nav = navigationController else { return }
-        presenter.didSelectedSport(at: indexPath.row, navigationController: nav)
+        presenter.didSelectedSport(at: indexPath.row)
     }
 }
 
