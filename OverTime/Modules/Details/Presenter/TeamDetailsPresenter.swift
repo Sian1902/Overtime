@@ -28,6 +28,7 @@ final class TeamDetailsPresenter: DetailsPresenterProtocol {
     }
 
     func viewDidLoad() {
+        view?.showLoading()
         view?.setTitle(team.teamName ?? "Team")
         view?.setFavoriteState(false)
         fetchFixtures()

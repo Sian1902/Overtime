@@ -1,4 +1,3 @@
-import UIKit
 import Foundation
 
 class SportsPresenter: SportsPresenterProtocol {
@@ -29,9 +28,9 @@ class SportsPresenter: SportsPresenterProtocol {
         self.view = view
     }
 
-    func didSelectedSport(at index: Int, navigationController: UINavigationController) {
+    func didSelectedSport(at index: Int) {
         let sport = sportTypes[index]
-        router.showLeagues(sport: sport, navigationController: navigationController)
+        router.showLeagues(sport: sport)
     }
 
     func SportsNumber() -> Int {

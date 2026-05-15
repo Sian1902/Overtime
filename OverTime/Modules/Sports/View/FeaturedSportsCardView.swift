@@ -105,7 +105,6 @@ class FeaturedSportsCardView: UIView {
             overlayLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -20)
         ])
         
-        // Setup Gradient
         gradientLayer.colors = [
             UIColor.clear.cgColor,
             UIColor.black.withAlphaComponent(0.8).cgColor
@@ -114,7 +113,6 @@ class FeaturedSportsCardView: UIView {
     }
     
     private func setupShadow() {
-        // Matching the shadow style from your setupLayer() in the cell
         self.layer.shadowColor = UIColor.appPrimary.cgColor
         self.layer.shadowOffset = CGSize(width: 0, height: 4)
         self.layer.shadowRadius = 8
@@ -125,12 +123,11 @@ class FeaturedSportsCardView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         gradientLayer.frame = containerView.bounds
-        // Matching the Bezier path shadow from your cell
         self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: 16).cgPath
     }
     
     private func startAnimation() {
-        timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { [weak self] _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { [weak self] _ in
             self?.transitionToNextImage()
         }
     }
@@ -138,7 +135,7 @@ class FeaturedSportsCardView: UIView {
     private func transitionToNextImage() {
         guard !images.isEmpty else { return }
         currentIndex = (currentIndex + 1) % images.count
-        UIView.transition(with: imageView, duration: 0.8, options: .transitionCrossDissolve, animations: {
+        UIView.transition(with: imageView, duration: 0.5, options: .transitionCrossDissolve, animations: {
             self.imageView.image = self.images[self.currentIndex]
         })
     }

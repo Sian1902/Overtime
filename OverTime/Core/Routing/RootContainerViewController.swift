@@ -9,7 +9,7 @@ import UIKit
 
 final class RootContainerViewController: UIViewController {
 
-    private var currentChild: UIViewController?
+    private(set) var currentChild: UIViewController? 
 
     func transition(to newChild: UIViewController) {
         if let current = currentChild {

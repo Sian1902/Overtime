@@ -10,6 +10,12 @@ final class AppRouter: AppRouterProtocol {
         self.root = root
         self.container = container
     }
+    private var currentNavigationController: UINavigationController? {
+            guard let tabBar = root?.currentChild as? UITabBarController,
+                  let nav = tabBar.selectedViewController as? UINavigationController
+            else { return nil }
+            return nav
+        }
 
     func showSplash() {
         let vc = container.makeSplashViewController(router: self)
@@ -26,25 +32,27 @@ final class AppRouter: AppRouterProtocol {
         root?.transition(to: tabBar, duration: 0.3)
     }
 
-    func showLeagues(sport: SportType, navigationController: UINavigationController) {
+    func showLeagues(sport: SportType) {
         let presenter = AllLeaguesPresenter(router: self, sport: sport)
         let vc = LeagueViewController.create(presenter: presenter, sport: sport)
+        guard let navigationController = currentNavigationController else { return }
         presenter.attachView(vc)
         vc.hidesBottomBarWhenPushed = true
         navigationController.pushViewController(vc, animated: true)
     }
 
-    func showLeagueDetails(league: League, sport: SportType, navigationController: UINavigationController) {
+    func showLeagueDetails(league: League, sport: SportType ) {
         let presenter = LeagueDetailsPresenter(router: self, league: league, sport: sport)
         let vc = DetailsViewController.create(presenter: presenter)
+        guard let navigationController = currentNavigationController else { return }
         vc.hidesBottomBarWhenPushed = true
         navigationController.pushViewController(vc, animated: true)
     }
     
-    func showTeamDetails(team : Team, sport: SportType, navigationController:
-        UINavigationController){
+    func showTeamDetails(team : Team, sport: SportType){
         let vc = container.makeTeamDetailsViewController(router: self, team: team, sport: sport)
         vc.hidesBottomBarWhenPushed = true
+        guard let navigationController = currentNavigationController else { return }
         navigationController.pushViewController(vc, animated: true)
     }
     

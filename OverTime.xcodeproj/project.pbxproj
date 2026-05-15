@@ -16,6 +16,8 @@
 		0C7EE3892FB150D9001B6CAF /* FavoriteLeague.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7EE3882FB150D9001B6CAF /* FavoriteLeague.swift */; };
 		0C7EE38C2FB1517D001B6CAF /* DatabaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7EE38B2FB1517D001B6CAF /* DatabaseManagerProtocol.swift */; };
 		0C7EE38E2FB15187001B6CAF /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7EE38D2FB15187001B6CAF /* DatabaseManager.swift */; };
+		0C94DCE82FB7CF1F004EE282 /* SportsAPIManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94DCE72FB7CF1F004EE282 /* SportsAPIManagerMock.swift */; };
+		0C94DCEA2FB7D186004EE282 /* SportsAPIManagerMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C94DCE92FB7D186004EE282 /* SportsAPIManagerMockTests.swift */; };
 		0CB656E22FAB22D600CD3A31 /* UIFont+AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656E12FAB22D600CD3A31 /* UIFont+AppFont.swift */; };
 		0CB656E42FAB230E00CD3A31 /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */; };
 		0CB656EE2FAB29EB00CD3A31 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB656ED2FAB29EB00CD3A31 /* SplashPresenter.swift */; };
@@ -95,6 +97,8 @@
 		0C7EE3882FB150D9001B6CAF /* FavoriteLeague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLeague.swift; sourceTree = "<group>"; };
 		0C7EE38B2FB1517D001B6CAF /* DatabaseManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerProtocol.swift; sourceTree = "<group>"; };
 		0C7EE38D2FB15187001B6CAF /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		0C94DCE72FB7CF1F004EE282 /* SportsAPIManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsAPIManagerMock.swift; sourceTree = "<group>"; };
+		0C94DCE92FB7D186004EE282 /* SportsAPIManagerMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsAPIManagerMockTests.swift; sourceTree = "<group>"; };
 		0CB656E12FAB22D600CD3A31 /* UIFont+AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+AppFont.swift"; sourceTree = "<group>"; };
 		0CB656E32FAB230E00CD3A31 /* LayoutConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
 		0CB656ED2FAB29EB00CD3A31 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
@@ -349,6 +353,8 @@
 				957056A02FB50990000EA8B7 /* SportsApiManagerTests.swift */,
 				957056A22FB511FA000EA8B7 /* DBMock.swift */,
 				957056A42FB5124B000EA8B7 /* DBTest.swift */,
+				0C94DCE72FB7CF1F004EE282 /* SportsAPIManagerMock.swift */,
+				0C94DCE92FB7D186004EE282 /* SportsAPIManagerMockTests.swift */,
 			);
 			path = OverTimeTests;
 			sourceTree = "<group>";
@@ -591,8 +597,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C94DCE82FB7CF1F004EE282 /* SportsAPIManagerMock.swift in Sources */,
 				957056A32FB511FA000EA8B7 /* DBMock.swift in Sources */,
 				957056A52FB5124B000EA8B7 /* DBTest.swift in Sources */,
+				0C94DCEA2FB7D186004EE282 /* SportsAPIManagerMockTests.swift in Sources */,
 				9570569A2FB50945000EA8B7 /* OverTimeTests.swift in Sources */,
 				957056A12FB50990000EA8B7 /* SportsApiManagerTests.swift in Sources */,
 			);

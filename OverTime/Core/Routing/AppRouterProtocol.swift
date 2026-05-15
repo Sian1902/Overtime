@@ -5,8 +5,8 @@ protocol AppRouterProtocol {
     func showSplash()
     func showOnboarding()
     func showMainTabBar()
-    func showLeagues(sport: SportType, navigationController: UINavigationController)
-    func showLeagueDetails(league: League, sport: SportType, navigationController: UINavigationController)
-    func showTeamDetails(team : Team, sport: SportType, navigationController:
-        UINavigationController)
+    func showLeagues(sport: SportType)
+    func showLeagueDetails(league: League, sport: SportType )
+    func showTeamDetails(team : Team, sport: SportType
+        )
 }

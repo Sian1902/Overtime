@@ -6,4 +6,6 @@ protocol DetailsView: AnyObject {
     func showError(message: String)
     func setTitle(_ title: String)
     func setFavoriteState(_ isFavorite: Bool)
+    //func navigateToTeamDetails(team: Team, sport: SportType)
+
 }
